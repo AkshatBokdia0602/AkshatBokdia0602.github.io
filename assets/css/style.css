@@ -475,14 +475,20 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 
-/* main a.hoverline */
-
-/* a.hoverline:hover {
-  border-bottom: 3px solid #24305e !important;
-} */
+span.hoverline {
+    border-bottom: 3px solid transparent !important;
+    padding: 3px 3px 0 3px;
+    transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    -webkit-transition: 0.25s all;
+}
 
 a.hoverline:hover {
-  border-bottom: 3px solid #064fbd !important;
+  border-bottom: 3px solid #378de4 !important;
+}
+
+span.hoverline:hover {
+    border-bottom: 3px solid #378de4 !important;
 }
 
 #skills .card.large {
