@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Akshat Bokdia</title>
+  <meta name="description"
+    content="Akshat Bokdia — MSE in Computer and Information Science at the University of Pennsylvania. Machine learning engineering, natural language processing, and LLM guardrails." />
+  <link rel="canonical" href="https://akshatbokdia0602.github.io/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Akshat Bokdia" />
+  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Akshat Bokdia" />
+  <meta property="og:description"
+    content="Machine learning engineering, natural language processing, and LLM guardrails." />
+  <meta property="og:url" content="https://akshatbokdia0602.github.io/" />
+  <meta property="og:site_name" content="Akshat Bokdia" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0d0d0f" media="(prefers-color-scheme: dark)" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Apply the saved theme before first paint so there is no flash. -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || t === "light") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) { /* private mode — fall back to the system preference */ }
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Akshat Bokdia",
+    "url": "https://akshatbokdia0602.github.io/",
+    "email": "mailto:akshatbokdia1411@gmail.com",
+    "jobTitle": "Machine Learning Engineer",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Pennsylvania" },
+      { "@type": "CollegeOrUniversity", "name": "Vellore Institute of Technology" }
+    ],
+    "knowsAbout": ["Machine Learning", "Natural Language Processing", "Large Language Models", "Data Science"],
+    "sameAs": [
+      "https://github.com/AkshatBokdia0602",
+      "https://www.linkedin.com/in/akshat-bokdia/",
+      "https://scholar.google.co.in/citations?hl=en&user=I0g9fTUAAAAJ"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <!-- ============================================================== nav -->
+  <nav class="nav" aria-label="Sections">
+    <div class="nav-inner">
+      <a class="nav-name" href="#top" id="nav-home">Akshat Bokdia</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+      </div>
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+          stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2" />
+          <path d="M12 2.4v2.2M12 19.4v2.2M2.4 12h2.2M19.4 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" />
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.5 14.3A8.6 8.6 0 1 1 9.7 3.5a6.9 6.9 0 0 0 10.8 10.8z" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================= hero -->
+  <header class="hero" id="top">
+    <div class="wrap hero-inner">
+
+      <!-- Portrait. To use your own photo, overwrite assets/img/portrait.jpg
+           with a square crop (600x600 or larger). No markup change needed —
+           unless your file is a .png, in which case update the src below. -->
+      <figure class="hero-portrait">
+        <img src="/assets/img/portrait.jpg" alt="Akshat Bokdia" width="480" height="480"
+          decoding="async" />
+      </figure>
+
+      <div class="hero-text">
+      <h1>Akshat Bokdia</h1>
+      <p class="hero-role">AI/ML Engineer | MSE CIS at UPenn</p>
+      <p class="hero-blurb">
+        I build models that make language systems safer to deploy, and I care about whether they hold up on real traffic rather than
+        on a benchmark.
+      </p>
+      <nav class="hero-links" aria-label="Profiles">
+        <a href="mailto:akshatbokdia1411@gmail.com">Email</a>
+        <a target="_blank" href="https://github.com/AkshatBokdia0602" rel="me noopener">GitHub</a>
+        <a target="_blank" href="https://www.linkedin.com/in/akshat-bokdia/" rel="me noopener">LinkedIn</a>
+        <a target="_blank" href="https://scholar.google.co.in/citations?hl=en&amp;user=I0g9fTUAAAAJ" rel="me noopener">Google Scholar</a>
+        <!-- TODO: drop the PDF at assets/Akshat-Bokdia-CV.pdf, then uncomment.
+        <a rel="noopener" target="_blank" href="/assets/Akshat-Bokdia-CV.pdf">CV</a>
+        -->
+      </nav>
+      </div><!-- /hero-text -->
+    </div>
+  </header>
+
+  <!-- ============================================================ about -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <h2 class="section-label">About</h2>
+      <div class="prose">
+        <p>
+          I am a graduate student at the University of Pennsylvania, where I study computer science with a focus on
+          machine learning and natural language processing. Most of my work sits at the point where a model meets
+          production: taking something that performs well in a notebook and finding out what it actually does when
+          real users are on the other side of it.
+        </p>
+        <p>
+          Recently that has meant guardrails for large language models — classifiers that sit in front of and behind
+          a generative agent, deciding what is safe to answer and what needs a second look before it reaches a user.
+          Before that I worked on anomaly detection and causal inference over telecom network data, and on deep
+          learning for medical imaging and genomics across research groups at Yale and the University of Cincinnati.
+        </p>
+        <p>
+          I have co-authored six peer-reviewed papers and book chapters, listed
+          <a href="#publications">below</a>. I am always glad to talk about
+          evaluation, model reliability, or anything adjacent — <a href="mailto:akshatbokdia1411@gmail.com">write to
+          me</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= experience -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <h2 class="section-label">Experience</h2>
+      <div class="entries">
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://www.tifin.com/" rel="noopener">TIFIN</a></h3>
+            <p class="entry-when">Jun 2026 &ndash; Aug 2026</p>
+          </div>
+          <p class="entry-role">AI Engineering Intern &middot; Boulder, CO</p>
+          <ul class="entry-list">
+            <li>
+              Built the response-side compliance classifier for an advisor-facing chat agent — a fine-tuned
+              ModernBERT that scores every generated response against 26 regulatory categories in roughly 37&nbsp;ms,
+              trained on a 10,000-record corpus of synthetic scenarios and PII-anonymized production traces.
+            </li>
+            <li>
+              Built the question-side screen as a pair of models: a LoRA fine-tuned general-purpose guardrail
+              adapted to domain risks its broader taxonomy could not isolate, and a capability classifier reaching
+              0.97 micro-F1 at 96.7% precision on held-out production traffic.
+            </li>
+            <li>
+              Owned the evaluation and serving path end to end — prevalence-adjusted test sets, threshold
+              calibration, real-versus-synthetic slices, and GPU deployment behind authenticated inference
+              endpoints.
+            </li>
+          </ul>
+          <p class="entry-tools">PyTorch &middot; Hugging Face &middot; PEFT/LoRA &middot; Modal &middot; vLLM &middot; Logfire</p>
+        </article>
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://www.ericsson.com/en" rel="noopener">Ericsson</a></h3>
+            <p class="entry-when">Feb 2025 &ndash; Aug 2025</p>
+          </div>
+          <p class="entry-role">Data Scientist Intern &middot; Chennai, India</p>
+          <ul class="entry-list">
+            <li>
+              Built a semi-supervised anomaly detection pipeline for time-series network KPIs, combining
+              decomposition techniques with tree-based and density-based models.
+            </li>
+            <li>
+              Applied causal inference to estimate the effect of network configuration parameters on user
+              throughput, separating genuine causal impact from confounded correlation.
+            </li>
+            <li>
+              Curated a 10,000-sample question-answering dataset and fine-tuned DeepSeek-R1 distilled models with
+              instruction-tuned prompts for domain adaptation.
+            </li>
+          </ul>
+          <p class="entry-tools">Python &middot; scikit-learn &middot; statsmodels &middot; DoWhy &middot; Hugging Face &middot; Amazon SageMaker</p>
+        </article>
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://ittrident.com/" rel="noopener">itTrident</a></h3>
+            <p class="entry-when">Sep 2024 &ndash; Oct 2024</p>
+          </div>
+          <p class="entry-role">Data Analyst Intern &middot; Chennai, India</p>
+          <ul class="entry-list">
+            <li>
+              Created an interactive Power BI dashboard analyzing airline operations and passenger behavior.
+            </li>
+            <li>
+              Built a CRM app in Power Apps to manage customer data, track leads, and automate follow-ups.
+            </li>
+          </ul>
+          <p class="entry-tools">Excel &middot; Power BI &middot; Power Apps</p>
+        </article>
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://www.cheenilabs.com/" rel="noopener">Cheeni Labs</a></h3>
+            <p class="entry-when">Aug 2023 &ndash; Sep 2023</p>
+          </div>
+          <p class="entry-role">ML Project Intern &middot; Chennai, India</p>
+          <ul class="entry-list">
+            <li>
+              Fine-tuned a pre-trained general embedding model for movie review classification, improving retrieval
+              relevance for the team's recommendation surface.
+            </li>
+            <li>
+              Preprocessed a 100,000-review dataset and trained a BERT-based summary classifier for Flixjini, the
+              company's streaming search product.
+            </li>
+          </ul>
+          <p class="entry-tools">Python &middot; SQL &middot; Sentence Transformers</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= research -->
+  <section class="section" id="research">
+    <div class="wrap">
+      <h2 class="section-label">Research</h2>
+      <div class="entries">
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://cogcomp.seas.upenn.edu/" rel="noopener">Cognitive Computation
+              Group, University of Pennsylvania</a></h3>
+            <p class="entry-when">Nov 2025 &ndash; Present</p>
+          </div>
+          <p class="entry-role">Graduate Research Programmer &middot; Philadelphia, USA</p>
+          <!-- TODO: add one or two bullets describing this work, in the same
+               <ul class="entry-list"> form as the entries above. -->
+        </article>
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p9867190" rel="noopener">Zarella Lab, University of Pennsylvania</a></h3>
+            <p class="entry-when">Mar 2026 &ndash; May 2026</p>
+          </div>
+          <p class="entry-role">Graduate Research Assistant &middot; Philadelphia, USA</p>
+          <!-- TODO: add one or two bullets describing this work, in the same
+               <ul class="entry-list"> form as the entries above. -->
+        </article>
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://ai-analytics.wharton.upenn.edu/wharton-accountable-ai-lab/" rel="noopener">Wharton Accountable AI Lab, University of Pennsylvania</a></h3>
+            <p class="entry-when">Nov 2025 &ndash; Feb 2026</p>
+          </div>
+          <p class="entry-role">Graduate Research Assistant &middot; Philadelphia, USA</p>
+          <!-- TODO: add one or two bullets describing this work, in the same
+               <ul class="entry-list"> form as the entries above. -->
+        </article>
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://www.gersteinlab.org/" rel="noopener">Gerstein Lab, Yale
+              University</a></h3>
+            <p class="entry-when">Jul 2024 &ndash; Aug 2024</p>
+          </div>
+          <p class="entry-role">Summer Research Intern &middot; New Haven, CT (Remote)</p>
+          <ul class="entry-list">
+            <li>
+              Trained convolutional and autoencoder models to classify structural variants in genomic sequences.
+            </li>
+            <li>
+              Built the preprocessing and sequence-embedding pipeline the classifiers were trained on.
+            </li>
+          </ul>
+          <p class="entry-tools">Python &middot; TensorFlow &middot; Hugging Face</p>
+        </article>
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://www.ams.jhu.edu/villar/" rel="noopener">Soledad Villar Research Group, Johns Hopkins University</a></h3>
+            <p class="entry-when">Jun 2024 &ndash; Aug 2024</p>
+          </div>
+          <p class="entry-role">Summer Research Intern &middot; Baltimore, MD (Remote)</p>
+          <!-- TODO: add one or two bullets describing this work, in the same
+               <ul class="entry-list"> form as the entries above. -->
+        </article>
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://www.prasathlab.com/" rel="noopener">Prasath Lab, University of
+              Cincinnati</a></h3>
+            <p class="entry-when">Mar 2024 &ndash; Aug 2024</p>
+          </div>
+          <p class="entry-role">Research Intern &middot; Cincinnati, OH (Remote)</p>
+          <ul class="entry-list">
+            <li>
+              Developed hybrid feature extraction techniques for brain tumour classification in medical imaging.
+            </li>
+            <li>
+              Built deep learning models that improved context-based retrieval accuracy over a brain tumour image
+              corpus — work that became a published conference paper.
+            </li>
+          </ul>
+          <p class="entry-tools">Python &middot; TensorFlow &middot; OpenCV</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== publications -->
+  <section class="section" id="publications">
+    <div class="wrap">
+      <h2 class="section-label">Publications</h2>
+
+      <div class="pub-group">
+        <h3 class="pub-group-label">Journal &amp; conference papers</h3>
+        <div class="pubs">
+
+          <article>
+            <p class="pub-title">
+              <a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0360544225008412" rel="noopener">
+                Appositeness of automated machine learning libraries on prediction of energy consumption for
+                electric two-wheelers based on micro-trip approach</a>
+            </p>
+            <p class="pub-authors">
+              A. Gurusamy, <span class="me">A. Bokdia</span>, H. Kumar, B. Ashok, C. Gunavathi
+            </p>
+            <p class="pub-venue"><em>Energy</em> (Elsevier), 2025</p>
+          </article>
+
+          <article>
+            <p class="pub-title">
+              <a target="_blank" href="https://ieeexplore.ieee.org/document/10962925" rel="noopener">
+                Exploring independent feature extraction techniques for context-based image retrieval in
+                healthcare</a>
+            </p>
+            <p class="pub-authors">
+              <span class="me">A. Bokdia</span>, S. R. Kulakarni, N. Lodha, V. Vijayarajan, V. B. S. Prasath
+            </p>
+            <p class="pub-venue"><em>AI-Driven Smart Healthcare for Society 5.0</em> (IEEE), 2025</p>
+          </article>
+
+          <article>
+            <p class="pub-title">
+              <a target="_blank" href="https://ieeexplore.ieee.org/document/10771735" rel="noopener">
+                Expediency analysis of clustering algorithms for electric two-wheeler driving cycle development
+                under Indian smart city driving conditions</a>
+            </p>
+            <p class="pub-authors">
+              A. Gurusamy, <span class="me">A. Bokdia</span>, H. Kumar, A. Radhika, B. Ashok, C. Gunavathi
+            </p>
+            <p class="pub-venue"><em>IEEE Access</em>, 2024</p>
+          </article>
+
+          <article>
+            <p class="pub-title">
+              <a target="_blank" href="https://ieeexplore.ieee.org/document/10574792" rel="noopener">
+                Performance analysis of data augmentation techniques for lung cancer classification using microarray
+                data</a>
+            </p>
+            <p class="pub-authors">
+              <span class="me">A. Bokdia</span>, C. Gunavathi
+            </p>
+            <p class="pub-venue">
+              <em>International Conference on Artificial Intelligence for Internet of Things (AIIoT)</em> (IEEE),
+              2024
+            </p>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="pub-group">
+        <h3 class="pub-group-label">Book chapters</h3>
+        <div class="pubs">
+
+          <article>
+            <p class="pub-title">
+              <a target="_blank" href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003498292-10/quantum-enhanced-feature-extraction-smart-logistics-transportation-systems-akshat-bokdia-nitin-lodha-vijayarajan"
+                rel="noopener">
+                Quantum-enhanced feature extraction for smart logistics and transportation systems</a>
+            </p>
+            <p class="pub-authors">
+              <span class="me">A. Bokdia</span>, N. Lodha, V. Vijayarajan
+            </p>
+            <p class="pub-venue">
+              In <em>Quantum Computing and Artificial Intelligence in Logistics and Supply Chain Management</em>,
+              CRC Press / Taylor &amp; Francis
+            </p>
+          </article>
+
+          <article>
+            <p class="pub-title">
+              <a target="_blank" href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781032708430-9/examining-role-machine-learning-deep-learning-diabetes-mellitus-detection-diagnosis-gunavathi-akshat-bokdia-siri-kulakarni"
+                rel="noopener">
+                Examining the role of machine learning and deep learning in diabetes mellitus detection and
+                diagnosis: a critical review</a>
+            </p>
+            <p class="pub-authors">
+              C. Gunavathi, <span class="me">A. Bokdia</span>, S. R. Kulakarni
+            </p>
+            <p class="pub-venue">CRC Press / Taylor &amp; Francis</p>
+          </article>
+
+        </div>
+      </div>
+
+      <p class="note">
+        Citation counts and any newer work are on
+        <a target="_blank" href="https://scholar.google.co.in/citations?hl=en&amp;user=I0g9fTUAAAAJ" rel="noopener">Google
+        Scholar</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================= projects -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <h2 class="section-label">Projects</h2>
+      <div class="projects">
+
+        <article>
+          <h3 class="project-name"><a href="https://github.com/AkshatBokdia0602/Bully-Detector" target="_blank" rel="noopener">Bully Detector</a></h3>
+          <p class="project-desc">
+            A cyberbullying classifier for short-form social text, trained on a corpus of over 40,000 labelled
+            tweets and reaching an F1 of 0.87.
+          </p>
+          <p class="project-tools">Python &middot; NLTK &middot; scikit-learn &middot; MySQL</p>
+        </article>
+
+        <article>
+          <h3 class="project-name"><a href="https://github.com/AkshatBokdia0602/DebateMate" target="_blank" rel="noopener">DebateMate</a></h3>
+          <p class="project-desc">
+            An LLM-backed debate partner. Pick a topic and a difficulty, argue a side, and get structured feedback
+            on your reasoning as the exchange goes on.
+          </p>
+          <p class="project-tools">Python &middot; Streamlit &middot; LLM APIs</p>
+        </article>
+
+        <article>
+          <h3 class="project-name"><a href="https://github.com/AkshatBokdia0602/Wave-Control" target="_blank" rel="noopener">Wave Control</a></h3>
+          <p class="project-desc">
+            Real-time hand gesture recognition mapped to media controls, so playback and volume can be driven
+            without touching the keyboard.
+          </p>
+          <p class="project-tools">Python &middot; OpenCV &middot; TensorFlow</p>
+        </article>
+
+        <article>
+          <h3 class="project-name"><a href="https://github.com/AkshatBokdia0602/Uber-Data-Analysis" target="_blank" rel="noopener">Uber Data Analysis</a></h3>
+          <p class="project-desc">
+            An exploratory analysis of six months of New York Uber pickups, visualising how demand moves across
+            hours, days and boroughs.
+          </p>
+          <p class="project-tools">R &middot; ggplot2</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== education -->
+  <section class="section" id="education">
+    <div class="wrap">
+      <h2 class="section-label">Education</h2>
+      <div class="edu">
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://www.upenn.edu/" rel="noopener">University of Pennsylvania</a></h3>
+            <p class="entry-when">2025 &ndash; 2027</p>
+          </div>
+          <div class="edu-degree">
+            <span>MSE in Computer and Information Science &middot; Philadelphia, USA</span>
+            <span class="edu-gpa">GPA 4.0/4.0</span>
+          </div>
+          <p class="edu-detail">
+            Coursework: Machine Learning &middot; Trustworthy ML &middot; Agentic AI &middot; Computer
+            Vision &amp; Computational Photography
+          </p>
+        </article>
+
+        <article>
+          <div class="entry-head">
+            <h3 class="entry-org"><a target="_blank" href="https://vit.ac.in/" rel="noopener">Vellore Institute of
+              Technology</a></h3>
+            <p class="entry-when">2021 &ndash; 2025</p>
+          </div>
+          <div class="edu-degree">
+            <span>B.Tech in Computer Science and Engineering &middot; Vellore, India</span>
+            <span class="edu-gpa">GPA 3.97/4.0</span>
+          </div>
+          <p class="edu-detail">
+            Coursework: Natural Language Processing &middot; Artificial Intelligence &middot; Big Data Analytics
+            &middot; Programming for Data Science
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== skills -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <h2 class="section-label">Skills</h2>
+      <div class="skills">
+
+        <div class="skill-row">
+          <p class="skill-label">Languages</p>
+          <p class="skill-items">Python, R, SQL, C++, Shell</p>
+        </div>
+
+        <div class="skill-row">
+          <p class="skill-label">Machine learning</p>
+          <p class="skill-items">
+            PyTorch, TensorFlow, scikit-learn, Hugging Face (Transformers, PEFT, Datasets), DSPy, OpenCV,
+            NLTK
+          </p>
+        </div>
+
+        <div class="skill-row">
+          <p class="skill-label">Data &amp; statistics</p>
+          <p class="skill-items">NumPy, pandas, statsmodels, DoWhy, Matplotlib, Seaborn, Excel, Power BI, Tableau</p>
+        </div>
+
+        <div class="skill-row">
+          <p class="skill-label">Infrastructure</p>
+          <p class="skill-items">Modal, vLLM, Amazon SageMaker, Logfire, Git, MySQL, SQLite, Streamlit, Flask</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================== footer -->
+  <footer class="footer" id="contact">
+    <div class="wrap">
+      <h2 class="section-label">Contact</h2>
+      <p class="footer-lead">
+        The fastest way to reach me is email. I read everything, and I reply to anything that isn't a recruiter
+        template.
+      </p>
+      <div class="footer-links">
+        <a href="mailto:akshatbokdia1411@gmail.com">Email</a>
+        <a target="_blank" href="https://github.com/AkshatBokdia0602" rel="me noopener">GitHub</a>
+        <a target="_blank" href="https://www.linkedin.com/in/akshat-bokdia/" rel="me noopener">LinkedIn</a>
+        <a target="_blank" href="https://scholar.google.co.in/citations?hl=en&amp;user=I0g9fTUAAAAJ" rel="me noopener">Google Scholar</a>
+      </div>
+      <p class="footer-fine">&copy; <span id="year">2026</span> Akshat Bokdia</p>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle: cycles light/dark and remembers the choice.
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById("theme-toggle");
+      if (!btn) return;
+
+      btn.addEventListener("click", function () {
+        var explicit = root.getAttribute("data-theme");
+        var current = explicit ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        var next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("theme", next); } catch (e) { /* ignore */ }
+      });
+    })();
+
+    // The name scrolls to the top without leaving "#top" in the address bar.
+    // The href stays as a working fallback if this script never runs.
+    (function () {
+      var home = document.getElementById("nav-home");
+      if (!home) return;
+
+      home.addEventListener("click", function (ev) {
+        if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button !== 0) return;
+        ev.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        if (window.history.replaceState) {
+          window.history.replaceState(null, "", window.location.pathname + window.location.search);
+        }
+      });
+    })();
+
+    // Keep the footer year current without touching the markup each January.
+    (function () {
+      var el = document.getElementById("year");
+      if (el) el.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+
+</html>
