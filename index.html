@@ -112,8 +112,7 @@
       <h1>Akshat Bokdia</h1>
       <p class="hero-role">AI/ML Engineer | MSE CIS at UPenn</p>
       <p class="hero-blurb">
-        I build models that make language systems safer to deploy, and I care about whether they hold up on real traffic rather than
-        on a benchmark.
+        I build reliable AI systems across language models, agentic workflows, and applied machine learning.
       </p>
       <nav class="hero-links" aria-label="Profiles">
         <a href="mailto:akshatbokdia1411@gmail.com">Email</a>
@@ -135,21 +134,18 @@
       <div class="prose">
         <p>
           I am a graduate student at the University of Pennsylvania, where I study computer science with a focus on
-          machine learning and natural language processing. Most of my work sits at the point where a model meets
-          production: taking something that performs well in a notebook and finding out what it actually does when
-          real users are on the other side of it.
+          machine learning and natural language processing. I am interested in building intelligent systems that
+          connect ambitious research with meaningful real-world impact.
         </p>
         <p>
-          Recently that has meant guardrails for large language models — classifiers that sit in front of and behind
-          a generative agent, deciding what is safe to answer and what needs a second look before it reaches a user.
-          Before that I worked on anomaly detection and causal inference over telecom network data, and on deep
-          learning for medical imaging and genomics across research groups at Yale and the University of Cincinnati.
+          My experience spans AI safety and compliance for financial-advisor agents, LLM reasoning and agent
+          evaluation, and applied machine learning for telecom analytics. I have also worked on computer vision and
+          deep learning projects in medical imaging, genomics, and scientific data.
         </p>
         <p>
-          I have co-authored six peer-reviewed papers and book chapters, listed
-          <a href="#publications">below</a>. I am always glad to talk about
-          evaluation, model reliability, or anything adjacent — <a href="mailto:akshatbokdia1411@gmail.com">write to
-          me</a>.
+          Going forward, I want to build AI systems for complex, high-impact problems that are practical,
+          dependable, and useful. I am drawn to work that combines technical depth with careful
+          evaluation and thoughtful engineering.
         </p>
       </div>
     </div>
@@ -263,8 +259,17 @@
             <p class="entry-when">Nov 2025 &ndash; Present</p>
           </div>
           <p class="entry-role">Graduate Research Programmer &middot; Philadelphia, USA</p>
-          <!-- TODO: add one or two bullets describing this work, in the same
-               <ul class="entry-list"> form as the entries above. -->
+          <ul class="entry-list">
+            <li>
+              Designed an experimental framework to trace multi-step reasoning dynamics through line-level entropy
+              trajectories from next-token probability distributions.
+            </li>
+            <li>
+              Built an LLM error detector for OfficeBench agent traces, comparing detection and localization
+              approaches across context windows.
+            </li>
+          </ul>
+          <p class="entry-tools">Python &middot; OpenAI SDK &middot; vLLM</p>
         </article>
 
         <article>
@@ -273,8 +278,13 @@
             <p class="entry-when">Mar 2026 &ndash; May 2026</p>
           </div>
           <p class="entry-role">Graduate Research Assistant &middot; Philadelphia, USA</p>
-          <!-- TODO: add one or two bullets describing this work, in the same
-               <ul class="entry-list"> form as the entries above. -->
+          <ul class="entry-list">
+            <li>
+              Built a WSI registration, tissue-segmentation, and patch-extraction pipeline to assess whether aged
+              or cross-scanner slides remain usable for downstream training.
+            </li>
+          </ul>
+          <p class="entry-tools">Python &middot; OpenCV &middot; SimpleITK &middot; PyTorch</p>
         </article>
 
         <article>
@@ -283,8 +293,13 @@
             <p class="entry-when">Nov 2025 &ndash; Feb 2026</p>
           </div>
           <p class="entry-role">Graduate Research Assistant &middot; Philadelphia, USA</p>
-          <!-- TODO: add one or two bullets describing this work, in the same
-               <ul class="entry-list"> form as the entries above. -->
+          <ul class="entry-list">
+            <li>
+              Built a structured expert database by profiling, cleaning, and standardizing enterprise AI governance
+              practitioners and third-party experts for research and industry collaboration.
+            </li>
+          </ul>
+          <p class="entry-tools">Python &middot; Pandas</p>
         </article>
 
         <article>
@@ -311,8 +326,12 @@
             <p class="entry-when">Jun 2024 &ndash; Aug 2024</p>
           </div>
           <p class="entry-role">Summer Research Intern &middot; Baltimore, MD (Remote)</p>
-          <!-- TODO: add one or two bullets describing this work, in the same
-               <ul class="entry-list"> form as the entries above. -->
+          <ul class="entry-list">
+            <li>
+              Modelled a DeepSet architecture to predict power spectra from galaxy catalogues in the CAMELS dataset.
+            </li>
+          </ul>
+          <p class="entry-tools">Python &middot; PyTorch</p>
         </article>
 
         <article>
@@ -451,15 +470,6 @@
       <div class="projects">
 
         <article>
-          <h3 class="project-name"><a href="https://github.com/AkshatBokdia0602/Bully-Detector" target="_blank" rel="noopener">Bully Detector</a></h3>
-          <p class="project-desc">
-            A cyberbullying classifier for short-form social text, trained on a corpus of over 40,000 labelled
-            tweets and reaching an F1 of 0.87.
-          </p>
-          <p class="project-tools">Python &middot; NLTK &middot; scikit-learn &middot; MySQL</p>
-        </article>
-
-        <article>
           <h3 class="project-name"><a href="https://github.com/AkshatBokdia0602/DebateMate" target="_blank" rel="noopener">DebateMate</a></h3>
           <p class="project-desc">
             An LLM-backed debate partner. Pick a topic and a difficulty, argue a side, and get structured feedback
@@ -469,21 +479,30 @@
         </article>
 
         <article>
+          <h3 class="project-name">Dorm Chef</h3>
+          <p class="project-desc">
+            A recipe generator trained with SFT and DPO to create quick, student-friendly meals that meet
+            ingredient, cooking-time, dietary, cuisine, and taste constraints.
+          </p>
+          <p class="project-tools">Python &middot; OpenAI SDK</p>
+        </article>
+
+        <article>
+          <h3 class="project-name">ToolHeal</h3>
+          <p class="project-desc">
+            A meta multi-agent system that diagnoses LLM-agent failures, creates or updates missing tools,
+            and validates them before registry integration.
+          </p>
+          <p class="project-tools">Python &middot; OpenRouter &middot; OpenAI SDK &middot; Pydantic &middot; Hugging Face</p>
+        </article>
+
+        <article>
           <h3 class="project-name"><a href="https://github.com/AkshatBokdia0602/Wave-Control" target="_blank" rel="noopener">Wave Control</a></h3>
           <p class="project-desc">
             Real-time hand gesture recognition mapped to media controls, so playback and volume can be driven
             without touching the keyboard.
           </p>
           <p class="project-tools">Python &middot; OpenCV &middot; TensorFlow</p>
-        </article>
-
-        <article>
-          <h3 class="project-name"><a href="https://github.com/AkshatBokdia0602/Uber-Data-Analysis" target="_blank" rel="noopener">Uber Data Analysis</a></h3>
-          <p class="project-desc">
-            An exploratory analysis of six months of New York Uber pickups, visualising how demand moves across
-            hours, days and boroughs.
-          </p>
-          <p class="project-tools">R &middot; ggplot2</p>
         </article>
 
       </div>
